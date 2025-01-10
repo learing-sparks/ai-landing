@@ -357,3 +357,7 @@ para {
 .credit p {
     color: gray;
 }
+
+#power h2 {
+    font-size: 70px;
+}
