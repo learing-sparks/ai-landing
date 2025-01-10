@@ -1,0 +1,359 @@
+/* Add this in your CSS file or in the <head> of your HTML */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    /* background: linear-gradient(to bottom, black 10%, #602A9A, black 88%); */
+    background-color: black; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+
+* {
+    box-sizing: border-box; 
+}
+  
+.container {
+    color: white;
+    opacity:60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 8px 40px;
+    gap:30px
+}
+
+.container img {
+    color: gray;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 40px;  
+    justify-content: space-evenly;
+}
+
+.cta {
+    width: 110px;
+    height: 30px;
+    /* border: 1px solid white;     */
+    background: #8C45FF;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cta div {
+    color: white;
+    padding: 5px 15px 2px 15px;
+    font-size: small;
+}
+
+.hero {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 0.5px solid gray;
+    background: black;
+    padding: 8px 14px;
+    border-radius: 50px;
+}
+
+.line {
+    margin-top: 10px;
+    margin-left: 170px;
+    border-bottom: 1px solid gray;
+    opacity: 60%;
+    margin-right: 170px;
+}
+
+#badge span {
+    padding: 10px 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 10px;
+    background: #9855FF;
+    border-radius: 40px;
+}
+
+#latest {
+    color: #9855FF;
+    font-size: medium;
+}
+
+/* Hero content */
+
+#boost {
+    color: white;
+    font-size: 82px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+#sub {
+    color: white;
+    font-size: medium;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    z-index: 10;
+    position: relative;
+}
+
+.free {
+    background: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 600px;
+}
+
+.wrap {
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 7px;
+    z-index: 10;
+    position: relative;
+}
+
+#dashboard {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;  
+}
+
+.grid-container {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Creates 2 equal rows */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.icons {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.icons img {
+    padding: 30px 30px;
+}
+
+.trust-container {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-container p {
+    color: white;
+    opacity: 70%;
+    /* text-align: center; */
+}
+
+#power {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#bento, #bento2 {
+    width: 70%;
+    /* margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px; */
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Creates 2 equal rows */
+    grid-template-columns: repeat(3, 1fr); /* Creates 4 equal columns */
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.testimonials {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.testimonials h1 {
+    font-size: 60px;
+}
+
+para {
+    text-align: center;
+}
+
+.sub-test {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 90px;
+}
+
+#name p {
+    opacity: 80%;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.pricing-container h1 {
+    font-size: 60px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.pricing{
+    border: 1px solid gray;
+    opacity: 70%;
+    border-radius: 8px;
+}
+
+.sub-pricing {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;  
+    margin-bottom: 30px;
+    height: 100%; /* Ensures the container fills the available height */
+}
+
+.sub-pricing div {
+    margin-bottom: 10px;
+}
+
+.subscription-container {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin: auto;
+    gap: 20px;
+}
+
+.btn {
+    margin-top: auto; 
+    background-color: black; /* Button background */
+    color: white; 
+    padding: 15px 20px; /* Padding for the button */
+    text-align: center; /* Centers the text */
+    font-weight: bold; /* Bold text */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Makes the button clickable */
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 8px 20px rgba(255, 255, 255, 0.2); /* White shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn p {
+    color: white;
+    padding: 20px;
+}
+
+.Line {
+    border-top: 2px solid #ccc;
+    margin: 10px 0;
+}
+
+#sd-price {
+    box-shadow: 0 8px 8px #602A9A, 0 -4px 20px #602A9A, 4px 0 20px #602A9A, -4px 0 8px #602A9A;
+}
+
+
+.wait {
+    display: flex;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #602A9A, black);
+    padding: 60px; 
+    color: white; 
+    border: 1px solid gray;
+    border-radius: 8px; 
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.action h1 {
+    font-size: 72px;
+}
+
+.wait input {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 400px;
+    background: #602A9A;
+    color: white;
+    font-size: 25px;
+    margin-right: 6px;
+}
+
+.btn-end {
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px;
+}
+
+.credit p {
+    color: gray;
+}
