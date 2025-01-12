@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;  
+            margin-bottom: 50px;
+        }
+        form div{
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        form div label{
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .votinglabel{
+            display: block;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        input[type="button"] {
+    margin: 0 55px; /* Add some space between the buttons */
+}
+    </style>
+</head>
+<body>
+    <h1>Form template example</h1>
+    <div>
+        <form >
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div>
+                <label for="coures">coures :</label>
+                <input type="checkbox" id="cse" name="coures" title="cse">
+                <input type="checkbox" id="ece" name="coures" title="ece">
+                <input type="checkbox" id="other" name="coures" title="other">
+            </div>
+            <div style="margin-bottom: 70px;">
+                <label class="votinglabel" for="coures">Is eligiable for voting ?</label>
+                <input type="radio" id="Yes" name="coures" title="Yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" id="No" name="coures" title="No">
+                <label for="No">No</label>
+            </div>
+            <div style="text-align: center;    margin: auto;">
+                <button >Reset</button>
+                <input type="button" value="Save" >
+            </div>
+        </form>
+    </div>
+</body>
+</html>
