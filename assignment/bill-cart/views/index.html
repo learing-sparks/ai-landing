@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bill Cart</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Shopping Cart</h1>
+        <div class="product-list">
+            <h2>Products</h2>
+            <ul id="products"></ul>
+        </div>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart"></ul>
+            <div class="total">
+                <strong>Total: $<span id="total">0.00</span></strong>
+            </div>
+            <button onclick="resetBill()">Reset Bill</button>
+            <button onclick="generateBill()">Generate Bill</button>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

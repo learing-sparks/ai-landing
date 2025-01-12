@@ -1,0 +1,91 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Form styles */
+form {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Recipes list styles */
+.recipes-list {
+    margin-top: 20px;
+}
+
+.recipe-item {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-item button {
+    background: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.recipe-item button:hover {
+    background: #cc0000;
+}
