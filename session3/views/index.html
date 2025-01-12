@@ -4,8 +4,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="script" type="text/javascript" href="../js/script.js">
+    <!-- <script src="../js/script.js"></script> -->
 </head>
 <body>
     <h1>Template</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet temporibus, earum architecto deleniti blanditiis officiis voluptate sed illo excepturi vel saepe soluta similique! Voluptatem quidem adipisci neque ducimus molestias!</p>
+
+    <div id="helloWelcome">
+        <h1>Hello welocme to index page</h1>
+        <p>This is public in learing-sparks</p>
+    </div>
+    <button onclick="alert('hello alert message')">alert</button>
+    <button onclick="funConfirm()">confirm</button>
+
+    <h2>
+        Add JavaScript Code
+        inside Head Section
+    </h2>
+    <h3 id="demo" style="color:green;">
+        GeeksforGeeks
+    </h3>
+    <button type="button" onclick="myFun()">
+        Click Here
+    </button>
+
+    <script>
+        function myFun() {
+            document.getElementById("demo")
+                .innerHTML = "Content changed!";
+        }
+    </script>
+
+<form>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+    </div>
+    <div>
+        <label for="courses">Courses:</label>
+        <input type="checkbox" id="cse" name="courses" value="cse" title="cse">
+        <label for="cse">CSE</label>
+        <input type="checkbox" id="ece" name="courses" value="ece" title="ece">
+        <label for="ece">ECE</label>
+        <input type="checkbox" id="other" name="courses" value="other" title="other">
+        <label for="other">Other</label>
+    </div>
+    <div style="margin-bottom: 70px;">
+        <label class="votinglabel" for="voting">Is eligible for voting?</label>
+        <input type="radio" id="yes" name="voting" value="yes" title="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="voting" value="no" title="No">
+        <label for="no">No</label>
+    </div>
+    <div style="text-align: center; margin: auto;">
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+
+
+<script src="../js/script.js"></script>
 </body>
-</html>
+</html> 
