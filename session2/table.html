@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table exapmle </title>
+    <style>
+        *{
+            text-align: center;
+        }
+        table{
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: #f2f2f2;
+        }
+        tbody{
+            background-color: #f9f9f9;
+        }
+        thead tr{
+            background-color: #ff0000;
+        }
+        thead td{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table example in html</h1>
+    <table border="1">
+        <thead>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>GROUP</th>
+            <tr>
+                <td>2</td>
+                <td>Ram</td>
+                <td>A</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shyam</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Geeta</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Seeta</td>
+                <td>B</td>
+            </tr> 
+            <tr>
+                <td rowspan="2">5</td>
+                <td>Geeta</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <!-- Removed the first <td> element -->
+                <td>Seeta</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+        <thead>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>GROUP</th>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total 4</td>
+                <!-- Removed the second,last <td> element -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
