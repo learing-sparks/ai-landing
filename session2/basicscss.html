@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics css styling</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Type Selector */
+        h1 {
+            font-size: 2em;
+            color: #4CAF50;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #main-title {
+            font-size: 3em;
+            color: #FF5733;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            font-size: 1em;
+            color: #000;
+            border-color: #f2ff00;
+        }
+
+        a:hover {
+            height: 90px;
+            color: red;
+            margin: 30px;
+        }
+
+        p>a {
+            color: blue;
+        }
+
+        p+a {
+            color: green;
+        }
+
+        h3~a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">Main Title</h1>
+    <p>This is a paragraph.</p>
+    <p class="highlight">This is a highlighted paragraph.</p>
+    <input type="text" placeholder="Enter text here">
+
+    <p>
+        <a href="#">Direct child link</a> <!-- This will be blue -->
+        <span>
+            <a href="#">Nested link</a> <!-- This will not be blue -->
+        </span>
+    </p>
+
+    <hr>
+    <hr>
+    <hr>
+    <p>Paragraph Adjacent Selector</p>
+    <a href="#">Adjacent first sibling link</a> <!-- This will be green -->
+    <a href="#">Adjacent middel sibling link</a> <!-- This will be green -->
+    <a href="#">Adjacent last sibling link</a> <!-- This will be green -->
+    <p>Another paragraph</p>
+    <span>Not an adjacent sibling</span>
+    <a href="#">Not adjacent sibling link</a> <!-- This will not be green -->
+    <hr>
+    <hr>
+    <hr>
+    <div>
+        <h3>sibling Selector</h3>
+        <a href="#">First sibling link</a> <!-- This will be yellow -->
+        <a href="#">Second sibling link</a> <!-- This will be yellow -->
+        <a href="#">last sibling link</a> <!-- This will be yellow -->
+        <span>Not a sibling</span>
+    </div>
+    <hr>
+    <a href="#"> testing Not sibling link</a> <!-- This will not be yellow -->
+
+</body>
+
+</html>

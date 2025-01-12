@@ -1,0 +1,237 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            background-color: aqua;
+        }
+
+        div>span {
+            background-color: yellow;
+        }
+
+        p:last-child {
+            background-color: yellow;
+        }
+
+        li:first-child {
+            background-color: yellow;
+        }
+
+        li:last-child {
+            background-color: yellow;
+        }
+
+        br {
+            background-color: yellow;
+            height: 8px;
+            display: inline;
+            margin: 20px;
+            color: red;
+            background: yellow;
+        }
+
+
+        /* Setup Code */
+        .wrap {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            line-height: 1.75em;
+            color: #595959;
+        }
+
+        .description,
+        .example {
+            max-width: 500px;
+        }
+
+        .example {
+            margin-top: 20px;
+            padding: 20px 30px 25px;
+            background: #f5f5f5;
+            display: inline-block;
+            columns: 3;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* End Setup */
+
+        /* Relevant Code */
+        .example>li:nth-child(3n + 2) {
+            color: red;
+        }
+
+        .div-behind {
+            z-index: -1;
+            position: absolute;
+            background-color: lightblue;
+            width: 450px;
+            height: 100px;
+        }
+
+        .div-normal {
+            z-index: 0;
+            position: relative;
+            background-color: lightgreen;
+            width: 3000px;
+            height: 100px;
+        }
+
+        .div-front-1 {
+            z-index: 1;
+            position: absolute;
+            background-color: lightcoral;
+            width: 250px;
+            height: 100px;
+        }
+
+        .div-front-2 {
+            z-index: 2;
+            position: absolute;
+            background-color: lightgoldenrodyellow;
+            width: 140px;
+            height: 100px;
+        }
+
+        .div-front-9 {
+            z-index: 9;
+            position: absolute;
+            background-color: lightpink;
+            width: 80px;
+            height: 100px;
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .box1 {
+            position: relative;
+            z-index: 1;
+            border: solid;
+            height: 100px;
+            margin: 50px;
+        }
+
+        .box2 {
+            position: absolute;
+            z-index: 2;
+            background: pink;
+            width: 20%;
+            left: 65%;
+            top: -25px;
+            height: 120px;
+            opacity: 0.9;
+        }
+
+        .box3 {
+            position: absolute;
+            z-index: 3;
+            background: cyan;
+            width: 70%;
+            left: 40px;
+            top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Examples for selecting child elements</h1>
+    <div>
+        <span>
+            Span #1, in the div.
+            <span>Span #2, in the span that's in the div.</span>
+        </span>
+    </div>
+    <br>
+    <span>Span #3, not in the div at all.</span>
+    <div>
+        <p>The first paragraph in a div.</p>
+        <p>The second paragraph in a div.</p>
+        <p>The third paragraph in a div.</p>
+        <p>The fourth paragraph in a div.</p>
+    </div>
+    <hr>
+    <h1>Examples for selecting first & last child elements</h1>
+    <ul>
+        <li>First list item</li>
+        <li>middel list item</li>
+        <li>middel list item</li>
+        <li>middel list item</li>
+        <li>Second list item</li>
+        <li>middel list item</li>
+        <li>Second list item</li>
+        <li>Second list item</li>
+        <li>Second list item</li>
+        <li>Second list item</li>
+        <li>last list item</li>
+    </ul>
+    <ol>
+        <li>orderlist First list item</li>
+        <li>orderlist middel list item</li>
+        <li>orderlist middel list item</li>
+        <li>orderlist middel list item</li>
+        <li>orderlist Second list item</li>
+        <li>orderlist middel list item</li>
+        <li>orderlist Second list item</li>
+        <li>orderlist Second list item</li>
+        <li>orderlist Second list item</li>
+        <li>orderlist Second list item</li>
+        <li>orderlist last list item</li>
+    </ol>
+    <hr>
+    <h1>Examples for selecting only few child elements :nth-child(3n + 2)</h1>
+
+
+    <div class="wrap">
+        <p class="description"><span class="underline">:nth-child(3n + 2)</span> - Allows us to target every 3rd sibling
+            in a group starting from the 2nd sibling</p>
+        <ul class="example">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+    </div>
+
+
+    <hr>
+    <h1>Examples for selecting z-index child elements</h1>
+    <div class="container wrapper">
+        <div class="div-behind">Behind</div>
+        <div class="div-normal">Normal</div>
+        <div class="div-front-1">Front 1</div>
+        <div class="div-front-2">Front 2</div>
+        <div class="div-front-9">Front 9</div>
+    </div>
+    <h1>example-2</h1>
+    <div class="wrapper">
+        <div class="box1">Box 1 - has z-index: 1</div>
+        <div class="box2">Box 2 - has z-index: 2 (will be put above .box1)</div>
+        <div class="box3">Box 3 - has z-index: 3 (will be put above .box1 and .box2)</div>
+    </div>
+</body>
+
+</html>
