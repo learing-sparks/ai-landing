@@ -7,7 +7,7 @@
 
 ### Session Links
 
-- [assignment](https://learing-sparks.github.io/ai-landing/session1/assignment "assignment")
+- [assignment](https://learing-sparks.github.io/ai-landing/assignment "assignment")
 - [Session 1](https://learing-sparks.github.io/ai-landing/session1/ "Session-1")
 - [Session 2](https://learing-sparks.github.io/ai-landing/session2/ "Session-2") 
 - [Session 3](https://learing-sparks.github.io/ai-landing/session3/ "Session-3")
